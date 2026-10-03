@@ -1,6 +1,7 @@
 ## To edit after cloning the project:  
 
-npm ci (This will install all the dependencies onto your computer so you can run it locally)
+npm ci  
+(Installs required dependencies. Only need to do once everytime a new dependency is added)
 
 ## To run the project locally for testing:  
 
