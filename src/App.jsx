@@ -4,6 +4,7 @@ import { ReactReader } from 'react-reader';
 
 import { aboutMeText } from './txt/AboutMe.jsx';
 
+// Defines what the main page looks like.
 function Home() {
     return (
         <div>
@@ -13,6 +14,7 @@ function Home() {
     );
 }
 
+// Just code I had while trying to learn how the Router worked.
 function About() {
     return (
         <div>
@@ -26,6 +28,7 @@ function Book() {
     return (
         <div style={{ height: '200vh'}}>
             <h1>This is my favorite book</h1>
+            {/* This is how you use the generic look of the of react-reader. The book is in public/books/. I am looking into if there are more ways to customize it. */}
             <ReactReader
                 url="/books/alice.epub"
             />
@@ -33,6 +36,8 @@ function Book() {
     )
 }
 
+// The Routes is how you define what each page will look like. The path is what the path will be in the browser, and the
+// element says what function (the functions above) defines what that pages looks like.
 function App() {
     return (
         <BrowserRouter>
