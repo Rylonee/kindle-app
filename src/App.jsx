@@ -28,8 +28,6 @@ function Book() {
             <h1>This is my favorite book</h1>
             <ReactReader
                 url="/books/alice.epub"
-                location={location}
-                locationChanged={(epubcfi) => setLocation(epubcfi)}
             />
         </div>
     )
